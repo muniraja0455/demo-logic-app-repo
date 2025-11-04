@@ -14,7 +14,7 @@ variables:
 steps:
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'Subscription 1 _ MR'
+    azureSubscription: '4a363a72-2f1b-4954-b847-5437c2827782'
     scriptType: 'ps'
     scriptLocation: 'inlineScript'
     inlineScript: |
