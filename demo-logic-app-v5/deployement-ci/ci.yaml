@@ -1,0 +1,25 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  resourceGroup: 'SubscriptionMR_ResourceGroup'
+  logicAppName: 'demo-logicapp'
+  location: 'East US'
+
+steps:
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'Subscription 1 _ MR'
+    scriptType: 'ps'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az logicapp deployment create \
+        --resource-group $(resourceGroup) \
+        --name $(logicAppName) \
+        --location $(location) \
+        --src-path $(System.DefaultWorkingDirectory)/workflows
