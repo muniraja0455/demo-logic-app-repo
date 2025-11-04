@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "demo_logic_app_v5": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7136",
+      "launchBrowser": false
+    }
+  }
+}

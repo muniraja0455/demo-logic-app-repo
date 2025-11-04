@@ -1,0 +1,18 @@
+{
+  "folders": [
+    {
+      "name": "demo-logic-app-v5",
+      "path": "./demo-logic-app-v5"
+    }
+  ],
+  "settings": {
+    "terminal.integrated.env.windows": {
+      "PATH": "C:\\Users\\munir\\.azurelogicapps\\dependencies\\DotNetSDK;${env:PATH}"
+    },
+    "omnisharp.dotNetCliPaths": [
+      "C:\\Users\\munir\\.azurelogicapps\\dependencies\\DotNetSDK"
+    ],
+    "debug.internalConsoleOptions": "neverOpen",
+    "azurite.location": "C:\\Users\\munir\\.azurelogicapps\\.azurite"
+  }
+}
