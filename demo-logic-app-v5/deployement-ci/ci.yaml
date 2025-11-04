@@ -22,4 +22,4 @@ steps:
         --resource-group $(resourceGroup) \
         --name $(logicAppName) \
         --location $(location) \
-        --src-path $(System.DefaultWorkingDirectory)/workflows
+        --src-path $(System.DefaultWorkingDirectory)/demoapp-workflow
